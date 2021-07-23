@@ -1,0 +1,300 @@
+
+Original order for myList: 
+ FIRSTBREAK
+ first
+ second
+ MIDBREAK
+ third
+ fourth
+ fifth
+Current number of elements within myList: 7
+
+Copy Constructor: 
+ FIRSTBREAK
+ first
+ second
+ MIDBREAK
+ third
+ fourth
+ fifth
+Current number of elements within newList1: 7
+
+GenericItemType Constructor with data from head of myList: 
+ FIRSTBREAK
+Current number of elements within newList: 1
+
+List Entry Constructor with Head of myList: 
+ FIRSTBREAK
+ first
+ second
+ MIDBREAK
+ third
+ fourth
+ fifth
+Current number of elements within newList: 7
+
+Adding 'hello' as GIT to the head of myList: 
+ hello
+ FIRSTBREAK
+ first
+ second
+ MIDBREAK
+ third
+ fourth
+ fifth
+Current number of elements within myList: 8
+
+Adding 'begin' as ListEntry to the head of myList: 
+ begin
+ hello
+ FIRSTBREAK
+ first
+ second
+ MIDBREAK
+ third
+ fourth
+ fifth
+Current number of elements within myList: 9
+
+Adding 'midpoint' as GIT to the middle of myList: 
+ begin
+ hello
+ FIRSTBREAK
+ first
+ midpoint
+ second
+ MIDBREAK
+ third
+ fourth
+ fifth
+Current number of elements within myList: 10
+
+Adding 'anothermid' as ListEntry to the middle of myList: 
+ begin
+ hello
+ FIRSTBREAK
+ first
+ midpoint
+ anothermid
+ second
+ MIDBREAK
+ third
+ fourth
+ fifth
+Current number of elements within myList: 11
+
+Adding 'end' as GIT to the tail of myList: 
+ begin
+ hello
+ FIRSTBREAK
+ first
+ midpoint
+ anothermid
+ second
+ MIDBREAK
+ third
+ fourth
+ fifth
+ end
+Current number of elements within myList: 12
+
+Adding 'anotherend' as GIT to the tail of myList: 
+ anotherend
+ begin
+ hello
+ FIRSTBREAK
+ first
+ midpoint
+ anothermid
+ second
+ MIDBREAK
+ third
+ fourth
+ fifth
+ end
+Current number of elements within myList: 13
+
+Delete FIRSTBREAK as GIT and MIDBREAK as ListEntry from myList: 
+ anotherend
+ anothermid
+ begin
+ end
+ fifth
+ first
+ fourth
+ hello
+ midpoint
+ second
+ third
+Current number of elements within myList: 11
+
+Ascending sorted order of myList: 
+ anotherend
+ anothermid
+ begin
+ end
+ fifth
+ first
+ fourth
+ hello
+ midpoint
+ second
+ third
+Current number of elements within myList: 11
+
+Descending sorted order of myList: 
+ third
+ second
+ midpoint
+ hello
+ fourth
+ first
+ fifth
+ end
+ begin
+ anothermid
+ anotherend
+Current number of elements within myList: 11
+
+Reversing myList: 
+ anotherend
+ anothermid
+ begin
+ end
+ fifth
+ first
+ fourth
+ hello
+ midpoint
+ second
+ third
+Current number of elements within myList: 11
+
+Converting myList to Stack 
+ anotherend
+ anothermid
+ begin
+ end
+ fifth
+ first
+ fourth
+ hello
+ midpoint
+ second
+ third
+Current number of elements within myList: 11
+
+Pop stack 
+ anothermid
+ begin
+ end
+ fifth
+ first
+ fourth
+ hello
+ midpoint
+ second
+ third
+Current number of elements within myList: 10
+
+Push 'push' as git into Stack 
+ push
+ anothermid
+ begin
+ end
+ fifth
+ first
+ fourth
+ hello
+ midpoint
+ second
+ third
+Current number of elements within myList: 11
+
+Converting myStack to myQueue: 
+ push
+ anothermid
+ begin
+ end
+ fifth
+ first
+ fourth
+ hello
+ midpoint
+ second
+ third
+Current number of elements within myList: 11
+
+Perform enQueue to add 'enqueue' as GIT to myQueue 
+ enqueue
+ push
+ anothermid
+ begin
+ end
+ fifth
+ first
+ fourth
+ hello
+ midpoint
+ second
+ third
+Current number of elements within myList: 12
+
+Perform deQueue to remove from bottom of myQueue 
+ enqueue
+ push
+ anothermid
+ begin
+ end
+ fifth
+ first
+ fourth
+ hello
+ midpoint
+ second
+Current number of elements within myList: 11
+
+Converting myQueue to myPrioQueue: 
+ enqueue
+ push
+ anothermid
+ begin
+ end
+ fifth
+ first
+ fourth
+ hello
+ midpoint
+ second
+Current number of elements within myList: 11
+
+Sort myPrioQueue in ascending order: 
+ anothermid
+ begin
+ end
+ enqueue
+ fifth
+ first
+ fourth
+ hello
+ midpoint
+ push
+ second
+Current number of elements within myList: 11
+
+Sort myPrioQueue in descending order: 
+ second
+ push
+ midpoint
+ hello
+ fourth
+ first
+ fifth
+ enqueue
+ end
+ begin
+ anothermid
+Current number of elements within myList: 11
+
+Checking for OutOfMemory error...
+OutOfMemory error successfully caught. Closing file...
