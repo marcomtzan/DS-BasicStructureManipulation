@@ -43,7 +43,10 @@
    Name     Date     Description
    Marco    12/12    Create baseline for StringDataItem.
  */
- 
+package com.github.marcomtzan.basic_structure_manipulation;
+
+import com.github.marcomtzan.basic_structure_manipulation.core.GenericItemType;
+
 public class StringDataItem extends GenericItemType
 {
    // INSTANCE VARIABLE DECLARATION

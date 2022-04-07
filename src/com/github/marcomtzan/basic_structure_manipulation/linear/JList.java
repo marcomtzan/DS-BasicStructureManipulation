@@ -1,23 +1,27 @@
 /**
- @author       Marco Martinez
- @fileName     JList.java
- @version      1.0
- @description  Used as pointer based container with "standard" functionality.
- @date         2/20/2018
-
- Program Change Log
- ==========================
- Name     Date     Description
- Marco    2/20    Create baseline for JList.
+ * @author Marco Martinez
+ * @fileName JList.java
+ * @version 1.0
+ * @description Used as pointer based container with "standard" functionality.
+ * @date 2/20/2018
+ * <p>
+ * Program Change Log
+ * ==========================
+ * Name     Date     Description
+ * Marco    2/20    Create baseline for JList.
  */
+
+package com.github.marcomtzan.basic_structure_manipulation.linear;
+
+import com.github.marcomtzan.basic_structure_manipulation.core.GenericItemType;
 
 public class JList {
     // INSTANCE VARIABLE DECLARATIONS
-    ListEntry   head,
-                tail,
-                currentIteration;
-    int         totalCount,
-                currentCount;
+    protected ListEntry head,
+            tail,
+            currentIteration;
+    protected int totalCount,
+            currentCount;
 
     // CLASS CONSTRUCTORS
     // (+) JList()
@@ -123,7 +127,7 @@ public class JList {
             if (!this.isEmpty()) {
                 int mid = this.totalCount / 2;
                 this.currentIteration = head;
-                for (int i = 0; i < mid-1; i++) {
+                for (int i = 0; i < mid - 1; i++) {
                     this.currentIteration = this.currentIteration.getNext();
                 }
                 ListEntry temp = this.currentIteration;
@@ -173,7 +177,7 @@ public class JList {
                 this.head.getPrev().setNext(this.head);
                 this.head = this.head.getPrev();
             } else {
-                this.head = this.tail =  new ListEntry(le.getData());
+                this.head = this.tail = new ListEntry(le.getData());
             }
             this.totalCount++;
         }
@@ -188,7 +192,7 @@ public class JList {
             if (!this.isEmpty()) {
                 int mid = this.totalCount / 2;
                 this.currentIteration = head;
-                for (int i = 0; i < mid-1; i++) {
+                for (int i = 0; i < mid - 1; i++) {
                     this.currentIteration = this.currentIteration.getNext();
                 }
                 ListEntry temp = this.currentIteration.getNext();
@@ -198,7 +202,7 @@ public class JList {
                 temp.getPrev().setNext(temp);
 
             } else {
-                this.head = this.tail =  new ListEntry(le.getData());
+                this.head = this.tail = new ListEntry(le.getData());
             }
             this.totalCount++;
         }
@@ -216,7 +220,7 @@ public class JList {
                 this.tail.getNext().setPrev(this.tail);
                 this.tail = this.tail.getNext();
             } else {
-                this.head = this.tail =  new ListEntry(le.getData());
+                this.head = this.tail = new ListEntry(le.getData());
             }
         }
         this.totalCount++;
@@ -227,7 +231,7 @@ public class JList {
         this.currentIteration = this.head;
 
         for (int outer = 0; outer < this.totalCount; outer++) {
-            for (int inner = 0; inner < this.totalCount-1; inner++) {
+            for (int inner = 0; inner < this.totalCount - 1; inner++) {
                 if (this.currentIteration.getData().isGreater(this.currentIteration.getNext().getData())) {
                     GenericItemType temp = this.currentIteration.getData();
                     this.currentIteration.setData(this.currentIteration.getNext().getData());
@@ -244,7 +248,7 @@ public class JList {
         this.currentIteration = this.head;
 
         for (int outer = 0; outer < this.totalCount; outer++) {
-            for (int inner = 0; inner < this.totalCount-1; inner++) {
+            for (int inner = 0; inner < this.totalCount - 1; inner++) {
                 if (this.currentIteration.getData().isLess(this.currentIteration.getNext().getData())) {
                     GenericItemType temp = this.currentIteration.getData();
                     this.currentIteration.setData(this.currentIteration.getNext().getData());
@@ -257,10 +261,14 @@ public class JList {
     }
 
     // (+) GenericItemType linearSearch(GenericItemType key)
-    public GenericItemType linearSearch(GenericItemType key) { return new ListEntry(this.lSearch(key)).getData(); }
+    public GenericItemType linearSearch(GenericItemType key) {
+        return new ListEntry(this.lSearch(key)).getData();
+    }
 
     // (+) GenericItemType linearSearch(ListEntry key)
-    public GenericItemType linearSearch(ListEntry key) { return new ListEntry(this.lSearch(key.getData())).getData(); }
+    public GenericItemType linearSearch(ListEntry key) {
+        return new ListEntry(this.lSearch(key.getData())).getData();
+    }
 
     //  (-) ListEntry lSearch(GenericItemType key)
     private ListEntry lSearch(GenericItemType key) {
@@ -278,10 +286,14 @@ public class JList {
     }
 
     // (+) void remove(GenericItemType key)
-    public void remove(GenericItemType key) { this.delete(key); }
+    public void remove(GenericItemType key) {
+        this.delete(key);
+    }
 
     // (+) void remove(ListEntry key)
-    public void remove(ListEntry key) { this.delete(key.getData()); }
+    public void remove(ListEntry key) {
+        this.delete(key.getData());
+    }
 
     //  (-) void delete(GenericItemType key)
     private void delete(GenericItemType key) {
@@ -327,16 +339,24 @@ public class JList {
     }
 
     // (+) boolean isEmpty()
-    public boolean isEmpty() { return this.head == null; }
+    public boolean isEmpty() {
+        return this.head == null;
+    }
 
     // (+) int getCount()
-    public int getCount() { return this.totalCount; }
+    public int getCount() {
+        return this.totalCount;
+    }
 
     // (+) ListEntry getStart()
-    public ListEntry getStart() { return this.head; }
+    public ListEntry getStart() {
+        return this.head;
+    }
 
     // (+) ListEntry getEnd()
-    public ListEntry getEnd() { return this.tail; }
+    public ListEntry getEnd() {
+        return this.tail;
+    }
 
     // (+) void Iterator_initialize()
     public void Iterator_initialize() {

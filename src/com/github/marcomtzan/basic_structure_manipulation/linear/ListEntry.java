@@ -11,6 +11,10 @@
  Marco    2/20    Create baseline for ListEntry.
  */
 
+package com.github.marcomtzan.basic_structure_manipulation.linear;
+
+import com.github.marcomtzan.basic_structure_manipulation.core.GenericItemType;
+
 public class ListEntry {
     // (+) INSTANCE VARIABLE DECLARATION
     GenericItemType data;

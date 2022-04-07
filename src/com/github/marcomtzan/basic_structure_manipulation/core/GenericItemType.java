@@ -10,6 +10,7 @@
    Name     Date     Description
    Marco    12/18    Create baseline for GenericItemType.
  */
+package com.github.marcomtzan.basic_structure_manipulation.core;
  
 public abstract class GenericItemType {
 

@@ -10,6 +10,9 @@
  Name     Date     Description
  Marco    2/27    Create baseline for Queue.
  */
+package com.github.marcomtzan.basic_structure_manipulation.linear;
+
+import com.github.marcomtzan.basic_structure_manipulation.core.GenericItemType;
 
 public class Queue extends JList {
     // CLASS CONSTRUCTORS
